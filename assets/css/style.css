@@ -17,6 +17,22 @@ h1 {
 	position: static;
 	text-align: center;
 
+}
+
+.navbar-inverse {
+	border-top: solid 6px #4aaaa5 ;
+}
+
+.navbar-brand {
+	background-color: #4aaaa5 ;
+	color: white;
+}
+
+.navbar-right {
+	color: #4aaaa5 ;
+}
+
+
 /*/* Code I would like to add to complete this site but had issues doing*/
 
 /*I notice the portfolio page labels are not responsive when you get th 640px*/
