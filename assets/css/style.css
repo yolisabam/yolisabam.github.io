@@ -42,10 +42,6 @@ section {
  font-size: 2.5em;
 }
 
-#hero h6 {
-    font-family: 'Patrick Hand SC', cursive;
-
-}
 #hero{
     height:calc(100%-50px);
 
@@ -91,7 +87,7 @@ a {
     background: transparent;
 };
 
-#one p{
+#one p {
     font-family: 'Patrick Hand SC', cursive;
 }
 
