@@ -25,10 +25,13 @@ section {
 
 #heading {  
     text-align: center;
-    margin: -500;
-    margin-top: -400px;
+    margin-top: -450px;
     z-index: 9999999;
     font-weight: bold;
+}
+
+.gallery-wrapper {
+    display: inline-block;
 }
 
 .nav>li {
@@ -85,7 +88,8 @@ h2:hover {
 a {
     color: #666;
     background: transparent;
-};
+}
+
 
 #one p {
     font-family: 'Patrick Hand SC', cursive;
