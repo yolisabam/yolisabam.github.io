@@ -1,106 +1,41 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
-  <meta charset="UTF-8">
   <title>Yolisa Bam</title>
-
-  <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/particles.css"/>  
+    <link rel="stylesheet" href="assets/css/style.css"/>  
 </head>
-</body>
-
-  <nav class="navbar navbar-default">
+<body>
+  <section class="clearfix" id="hero">
+    <!-- nav -->
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Yolisa Bam</a>
-          </div>
-            <ul class="nav navbar-nav navbar-right">        
-              <li><a href="index.html">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-      </div>
-      <!--/.nav-collapse -->
+      <ul class="nav nav">
+        <li role="presentation"><a href="#one">PROJECTS</a></li>
+        <li role="presentation"><a href="#two">ABOUT</a></li>
+        <li role="presentation"><a href="#three">CONTACT</a></li> 
+      </ul>
     </div>
-    <!--/.container-fluid -->
-  </nav>
-
-<!-- Main Body goes in Container -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9">
-
-      <!-- The content in this div gets wrapped in a panel -->
-        <div class="panel">
-          <div class="panel-body">
-            <h1>About</h1>
-          </div>
-        </div>       
-      </div> 
-    
-
-    </div>
-  
- 
-
-    <div class="row">
-
-      <div class="col-md-3">
-
-        <img class="img img-thumbnail" src="assets/images/YBHeadShot.png">
-      </div>
-      <div class="col-md-6">
-        <p>Bear claw sugar plum chocolate cookie apple pie sesame snaps. Danish marzipan lollipop candy sweet roll. Sweet bear claw cookie muffin croissant jelly beans. Donut cheesecake cotton candy tiramisu chocolate bar bonbon jelly-o. Jelly beans jelly chocolate cake gummi bears liquorice. Lollipop sesame snaps lemon drops jelly beans cotton candy danish pie cotton candy caramels. Powder chocolate bar halvah lemon drops liquorice powder gummi bears dessert.</p>
-        <p>Bear claw sugar plum chocolate cookie apple pie sesame snaps. Danish marzipan lollipop candy sweet roll. Sweet bear claw cookie muffin croissant jelly beans. Donut cheesecake cotton candy tiramisu chocolate bar bonbon jelly-o. Jelly beans jelly chocolate cake gummi bears liquorice. Lollipop sesame snaps lemon drops jelly beans cotton candy danish pie cotton candy caramels. Powder chocolate bar halvah lemon drops liquorice powder gummi bears dessert.</p>
-    
-      </div>
-   
-
-
-  <div class="col-md-3">  
-       <div class="panel panel-default">
-        <div class="panel-heading">Connect with Me
-        </div>
-          <div class="panel-body">
-            <div class="col-sm-4">
-              <a href="https://stackoverflow.com/users/8432264/yolisa-bam?tab=profile"><img class="img img-thumbnail" src="assets/images/STACKOVERFLOW-128.png">
-            </div>
-            <div class="col-sm-4">
-              <a href="https://www.linkedin.com/in/yolisa-bam-41a39b65/"><img class="img img-thumbnail" src="assets/images/linkedin_six_black-128.png">
-            </div>
-            <div class="col-sm-4">
-              <a href="https://github.com/yolisabam"><img class="img img-thumbnail" src="assets/images/github_six_color-128.png">
-            </div>
-          </div>
-       </div>
-       </div> 
-    </div>
-
-
-
-
-    <div class= "navbar navbar-inverse navbar-fixed-bottom">
-
-      <div class = container>
-        <center><p class = "navbar-text"> ©Copyright 2017 Yolisa Bam</p>
-      </div>
-    </div>  
-
-    
-
-
+  <!-- particles -->
+    <div class="particles" id="particles-js"></div>
+  <!-- heading -->
+    <div id="heading"><h1>FRONT-END DEVELOPER</h1></div>
+  </section>
+  <section class="about" id="one">  
+    <div class="container">
+    <h2>PROJECTS</h2>
+    <div class = "row"><h3>01</h3></div>
+  </div>
+  </section>
+  <section class="projects" id="two">
+    <h2>ABOUT</h2>
+  </section>
+  <section class="contact" id="three">
+    <h2>CONTACT</h2>
+  </section>
+  <script type="text/javascript" src="./assets/js/particles.js"></script>
+  <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
-
 </html>

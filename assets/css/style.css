@@ -1,40 +1,82 @@
-h1 {
-	color: #4aaaa5;
+html, body {
+    margin: 0;
+ /*   height:100%;
+    width:100%;*/
+    padding:0;
+    background-color: #000;  
 }
 
-.icon-bar {
-	color: #4aaaa5;
+body {
+    background-color: #000;
+    color: #666;
+    font-size: 16px;
+}
+section {
+    /*display: block;
+    background: #CFF;
+    height:100%;
+    width:100%;
+    padding: 60px;
+    padding-left: 120px;
+    box-sizing:border-box;
+    position: relative;*/
+    height: 100vh;
+}
+
+#heading {  
+    text-align: center;
+    margin: -500;
+    margin-top: -400px;
+    z-index: 9999999;
+}
+
+.nav>li {
+    display: inline-block;
+}
+#heading h1 {
+ font-size: 2.5em;
+}
+#hero{
+    height:calc(100%-50px);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*----------------------------*/
+#one {
+    background: black;
+    font-size: 30px;
+    margin-top: 50px;
+}
+#two {
+    background: black;
+    font-size: 30px;
+}
+#three {
+    background: black;
+    font-size: 30px;
+}
+
+#particles-js{
+  background: black;
+  /*height:100%;
+  width: 100%;*/
+  z-index: 0;
+    
+}
+
+h2:hover {
+    border-bottom: solid 8px;
+    opacity: .75;
+
 }
 
 
-#footer {
-	margin-top: 20px;
-}
+/*#logo {
+    margin-top:-50%;
 
-
-.carousel-caption h4 {
-	background-color:#4aaaa5;
-	position: static;
-	text-align: center;
-
-}
-
-.navbar-inverse {
-	border-top: solid 6px #4aaaa5 ;
-}
-
-.navbar-brand {
-	background-color: #4aaaa5 ;
-	color: white;
-}
-
-.navbar-right {
-	color: #4aaaa5 ;
-}
-
-
-/*/* Code I would like to add to complete this site but had issues doing*/
-
-/*I notice the portfolio page labels are not responsive when you get th 640px*/
-
-
+}*/
