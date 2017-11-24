@@ -30,6 +30,11 @@ section {
     font-weight: bold;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .gallery-wrapper {
     display: inline-block;
 }
@@ -62,9 +67,13 @@ section {
     font-size: 30px;
     margin-top: 50px;
 }
+img {
+    display: inline-block;
+}
 #two {
     background: black;
     font-size: 30px;
+
 }
 #three {
     background: black;
