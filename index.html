@@ -34,48 +34,15 @@
   <section class="about" id="one">  
     <div class="container">
       <h2><strong>PROJECTS</strong></h2>
-      <br>
-      <div class="gallery-wrapper">
-      <div class="row">
-          <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail">
-              <img src="./assets/images/GIPHY.png" alt="...">
-            </a>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail">
-              <img src="./assets/images/GIPHY.png" alt="...">
-            </a>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail">
-              <img src="./assets/images/GIPHY.png" alt="...">
-            </a>
-          </div>
-        </div>  
-        <div class="row">
+      <div class="portfolio-container clearfix">
+        <!-- append JS temolate here -->
 
-           <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail">
-              <img src="./assets/images/GIPHY.png" alt="...">
-            </a>
-          </div>
-           <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail">
-              <img src="./assets/images/GIPHY.png" alt="...">
-            </a>
-          </div>
-           <div class="col-xs-6 col-md-4">
-            <a href="#" class="thumbnail">
-              <img src="./assets/images/GIPHY.png" alt="...">
-            </a>
-          </div> 
-
-      </div>   
       </div>
-    </div>
+  
     </div>
   </section>
+  <br>
+  <br>
   <section class="projects" id="two">
       <div class="container">
         <h2><strong>ABOUT</strong></h2>
@@ -85,7 +52,7 @@
         <br>
         <p class = "skills">Fluent in: HTML5, CSS,  Javascript, Mongo DB, Express, Node</p>
         <br>
-        <p class="skills">I Love: React, Git, Heroku, REST,  npm warning messages, CRM</p>
+        <p class="skills">I Love: React, Git, Heroku, REST,  NPM, CRM</p>
         <br>
       </div> 
   </section>  
@@ -93,19 +60,53 @@
   <section class="contact" id="three">
      <div class="container">
       <h2><strong>CONTACT</strong></h2>
-      <div class="wrapper"> 
-        <div class="col-md-3">
-          <p></p>
-        </div>
-
-        <div class="col-md-2">
-          <p></p>
-        </div>  
+      <div class="wrapper">
+      Front-End Developer
+       
+       
 
       </div>
      </div> 
   </section>
   <script type="text/javascript" src="./assets/js/particles.js"></script>
   <script type="text/javascript" src="./assets/js/app.js"></script>
+   <script>
+    $(document).ready(function() {
+  
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 650) {
+          $('#nav').addClass('navbar-fixed');
+        }
+        if ($(window).scrollTop() < 650) {
+          $('#nav').removeClass('navbar-fixed');
+        }
+      });
+    
+      var portfolioTemplate = 
+       `<div class="album-wrap">
+          <div class="album-cover-wrap">
+            <img src=" " class="album-cover">
+          </div>
+          
+        </div>`;
+
+      function addPorfolio() {
+        var portfolio = window.__portfolio;
+        var arrayLength = portfolio.length;
+        for (var i = 0; i < arrayLength; i++) {
+          // convert sting to HTML
+         var html = $.parseHTML(portfolioTemplate);
+     
+         // populate all elements with properies 
+         $(html).find('.album-cover').attr('src', portfolio[i].image );
+         
+    
+         // add to the page
+         $('.portfolio-container').append( html );
+        }
+      }
+      addPorfolio();
+    });
+    </script>
 </body>
 </html>
