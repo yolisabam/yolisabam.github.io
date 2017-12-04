@@ -1,22 +1,26 @@
 window.__portfolio = [
   {
-    image: "img/gifgirl.png",
-    albumTiitle: "DAMN.",
-    releaseDate: "APRIL 14, 2017",
+    image: "img/gif-generator.png",
+    albumTiitle: "RANDOM GIF GENERATOR.",
+    releaseDate: "JS, JQUERY, HTML, CSS",
+    buyLink: "https://github.com/yolisabam/random-gif-generator"
   },
   {
     image: "img/utender.png",
-    albumTiitle: "UNTITLED UNMASTERED",
-    releaseDate: "MARCH 4, 2016",
+    albumTiitle: "UTENDER",
+    releaseDate: "JS, API, JQUERY, HTML, CSS",
+    buyLink:""
   },
   {
-    image: "img/friend-finder.png",
-    albumTiitle: "TO PIMP A BUTTERFLY",
-    releaseDate: "MARCH 15, 2015",
+    image: "img/siri-clone.png",
+    albumTiitle: "SIRI CLONE BOT",
+    releaseDate: "JS, NODE.JS, API",
+    buyLink:""
   },
   {
-    image: "img/aep.png",
-    albumTiitle: "TO PIMP A BUTTERFLY",
-    releaseDate: "MARCH 15, 2015",
+    image: "img/event-choice.png",
+    albumTiitle: "THIS.EVENT:CHOICE",
+    releaseDate: "JS, HANDLEBARS, MYSQL, CSS",
+    buyLink: ""
   }
 ]

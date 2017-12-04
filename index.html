@@ -79,16 +79,29 @@
           $('#nav').removeClass('navbar-fixed');
         }
       });
+
+      $(document).on('click', '.anchor', function(event){
+          event.preventDefault();
+
+          $('html, body').animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+      });
     
       var portfolioTemplate = 
        `<div class="album-wrap">
           <div class="album-cover-wrap">
             <img src=" " class="album-cover">
           </div>
-          
+          <div class="alumn-content-wrap">
+            <h3 class="album-title"></h3>
+            <p> class= "album-release"></p>
+            <p class="album-buy-wrapper"><a href="" target="_blank" class="album-buy-link">BUY</a></p>
+          </div>   
         </div>`;
 
-      function addPorfolio() {
+
+   function addPorfolio() {
         var portfolio = window.__portfolio;
         var arrayLength = portfolio.length;
         for (var i = 0; i < arrayLength; i++) {
@@ -97,6 +110,10 @@
      
          // populate all elements with properies 
          $(html).find('.album-cover').attr('src', portfolio[i].image );
+         $(html).find('.album-title').append(portfolio[i].albumTiitle);
+         $(html).find('.album-release').append(albums[i].releaseDate);
+         $(html).find('.album-buy-link').attr('href', albums[i].buyLink);
+
          
     
          // add to the page
