@@ -95,24 +95,27 @@
           </div>
           <div class="alumn-content-wrap">
             <h3 class="album-title"></h3>
-            <p> class= "album-release"></p>
+            <p class= "album-release"></p>
             <p class="album-buy-wrapper"><a href="" target="_blank" class="album-buy-link">SEE ON GITHUB</a></p>
           </div>   
         </div>`;
 
 
-   function addPorfolio() {
+   function addPortfolio() {
         var portfolio = window.__portfolio;
+        console.log("I'm working 1");
         var arrayLength = portfolio.length;
+        console.log("I'm working");
         for (var i = 0; i < arrayLength; i++) {
           // convert sting to HTML
+         console.log("I'm working "); 
          var html = $.parseHTML(portfolioTemplate);
      
          // populate all elements with properies 
          $(html).find('.album-cover').attr('src', portfolio[i].image );
          $(html).find('.album-title').append(portfolio[i].albumTiitle);
-         $(html).find('.album-release').append(albums[i].releaseDate);
-         $(html).find('.album-buy-link').attr('href', albums[i].buyLink);
+         $(html).find('.album-release').append(portfolio[i].releaseDate);
+         $(html).find('.album-buy-link').attr('href', portfolio[i].buyLink);
 
          
     
@@ -120,7 +123,7 @@
          $('.portfolio-container').append( html );
         }
       }
-      addPorfolio();
+      addPortfolio();
     });
     </script>
 </body>

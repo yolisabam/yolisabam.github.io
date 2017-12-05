@@ -1,7 +1,7 @@
 window.__portfolio = [
   {
     image: "img/gif-generator.png",
-    albumTiitle: "RANDOM GIF GENERATOR.",
+    albumTiitle: "GIF GENERATOR.",
     releaseDate: "JS, JQUERY, HTML, CSS",
     buyLink: "https://github.com/yolisabam/random-gif-generator",
   },
