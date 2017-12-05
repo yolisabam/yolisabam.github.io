@@ -9,18 +9,18 @@ window.__portfolio = [
     image: "img/utender.png",
     albumTiitle: "UTENDER",
     releaseDate: "JS, API, JQUERY, HTML, CSS",
-    buyLink:"",
+    buyLink:"https://github.com/yolisabam/uTender",
   },
   {
     image: "img/siri-clone.png",
     albumTiitle: "SIRI CLONE BOT",
     releaseDate: "JS, NODE.JS, API",
-    buyLink:"",
+    buyLink:"https://github.com/yolisabam/siri-clone",
   },
   {
     image: "img/event-choice.png",
     albumTiitle: "THIS.EVENT:CHOICE",
     releaseDate: "JS, HANDLEBARS, MYSQL, CSS",
-    buyLink: "",
+    buyLink: "https://github.com/yolisabam/alcohol-event-planner",
   }
 ]
